@@ -6,7 +6,7 @@ class Linked_list:
             create a subclass to hold the information to be stored in the linked_list
             """
             self.data = data
-            self.next = None
+            self.next = None 
             self.prev = None
     
     def __init__(self):
