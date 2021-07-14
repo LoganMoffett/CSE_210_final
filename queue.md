@@ -50,3 +50,7 @@ This is where you are going to come in. There is a Data Structure called a Linke
 How are you going to do that? You are going to use a function called deque (pronoced deck). You are going to finish the code found at [queue](queue_practice.py) using that function.
 
 [solution](queue_solution.py)
+
+## Next segment
+
+If you are wanting to continue on the course, here is [linked list](linked_list.md)

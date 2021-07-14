@@ -48,3 +48,7 @@ Once you have attempted the linked List problem, you can view the solution and s
 [Linked_list_solved](linked_list_solution.py)
 
 [Linked_List_video](linked_list_solution.mp4)
+
+# next segment
+
+If you are wanting to continue on the series, here is a link to the last section [tree](tree.md)
