@@ -1,6 +1,7 @@
 ## Introduction
 
 You can view the video and see the reading for a review of what the video covers [Tree](tree_1.mp4)
+
 Part two of the tree videos are [tree_2](tree_2.mp4)
 
 Have you ever wondered how your computer files system works? The simple answer is a really cool data  structure called a tree. A tree is a simply put just like a tree outside. It has a root or trunk that holds all the information and off of that trunk or root is branches and on those branches are more branches till you get out to the leaves. This is how a tree works in programming, just like a linked list that has pointers pointing to the next place in memory a tree has many pointers pointing to different data sets.
@@ -46,7 +47,7 @@ We are going to use recursion for navigating out tree's which is why I bring it 
 
 Here is the example code of tree's. You are going to see that there is a binary and non-binary tree exmaple.
 
-[tree](tree_example.py)
+[tree example](tree_example.py)
 
 for a detailed explanation, see video 2 posted at the begining.
 
@@ -63,3 +64,5 @@ Use [practice](tree_practice.py) as your code to modify
 Here is my [solution](tree_solution.py) to the practice
 
 You can also view [solution video](tree_3.mp4) to watch a descriptive solution to the problem
+
+Here is an updated [solution](tree_new_solution.py) that impliments the interface class functions into the tree class.
