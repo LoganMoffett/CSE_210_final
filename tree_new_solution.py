@@ -15,6 +15,9 @@ class Tree:
 
     def __init__(self):
         self.root = None
+        self.data = None
+        self.child = None
+        self.branch = None
 
     def insert_root(self, data):
         new_node = Tree.Node(data)
@@ -38,16 +41,41 @@ class Tree:
             for x in range(0, len(curr.get_children())):
                 if self._insert_child(parent, child, curr.children[x]) == True:
                     return True
-    
-    def return_children(self, parent):
-        if self.root.data == parent:
-            return self.root.children
-        else:
-            self._return_children(parent, self.root)
 
-    def _return_children(self, parent, node):
-        if node.data == parent:
-            return node.children
+    def display(self):
+        if self.branch == None:
+            print(f"Parant {self.root.data}")
+            for child in self.root.children:
+                print(f"child {child.data}")
+            print()
         else:
-            for x in range(0, len(node.get_children())):
-                return self._return_children(parent, node.children[x])
+            print(f"Parant {self.branch.data}")
+            for child in self.branch.children:
+                print(f"child {child.data}")
+            print()
+    
+    def nav(self, option):
+        if self.branch is None:
+            self.branch = self.root
+        if option == 'b':
+            self.branch = self.branch.parent
+        else:
+            self.branch = self.branch.children[option - 1]
+
+tree = Tree()
+tree.insert_root(1)
+tree.insert_child(1, 2)
+tree.insert_child(1, 3)
+tree.insert_child(2, 4)
+tree.insert_child(3, 10)
+tree.insert_child(10, 5)
+tree.insert_child(1, 5)
+tree.display()
+tree.nav(1)
+tree.display()
+tree.nav('b')
+tree.display()
+tree.nav(2)
+tree.display()
+tree.nav(1)
+tree.display()
