@@ -54,3 +54,5 @@ How are you going to do that? You are going to use a function called deque (pron
 ## Next segment
 
 If you are wanting to continue on the course, here is [linked list](linked_list.md)
+
+If you want to return to [home page](introduction.md)
